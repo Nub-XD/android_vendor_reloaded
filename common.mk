@@ -231,6 +231,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Longshot
 
+# Faceunlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=true
+
 # Versioning
 include vendor/reloaded/config/version.mk
 
